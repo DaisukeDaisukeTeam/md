@@ -27,9 +27,24 @@
 ```
    - packname.mcpack
 ```
-next: config.yml
+
+<hr>
 
 以下のファイルをファイルエディタにて開きます。
 ```
 [PocketMine]\plugin_data\CustomItemLoader\config.yml
 ```
+文末へ以下の文章を適切に編集、追加致します...(インデント注意)
+```
+items:
+  [item_name]:
+    id: 1001
+    meta: 0
+    namespace: [namespace]
+    name: [item_name]
+    allow_off_hand: false
+    max_stack_size: 64
+    texture: [item_name]
+```
+
+サーバーを起動、giveコマンドにて、(/give ????? 1001)アイテムは正常に追加致します事を確認します。
